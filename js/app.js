@@ -86,7 +86,9 @@ for (var i = 0; i <= tabl.length; i++){
 }
 
 // DOM Api Document Object Mobi
-var ppp = document.querySelector(".jumbotron"); //jego jeszcze nie ma 
+var ppp = document.querySelector(".jumbotron"); //jego jeszcze nie ma , najlepiej sctipt wkleic na koncu
+
+
 console.log(ppp);
 ppp.style.border = "3px solid red"
 
