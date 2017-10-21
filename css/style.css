@@ -306,3 +306,7 @@ footer p {
 .pogrubiony {
   font-weight: bold;
 }
+
+.more {
+  display: none;
+}

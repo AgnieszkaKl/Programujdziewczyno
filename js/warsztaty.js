@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menuList[i].addEventListener("mouseover", function() { //nasłuchiwacz //zamiast mouseover moze byc click
           // console.log("huraaaa"); // działa
           //"this" to taka zmienna, ktora jest tym, na co najechał użytkownik, w co kliknął, zawsze w AssEventListener uzywamy this
-          // this.style.font-size = 100px; 
+          // this.style.font-size = 100px;
           var dropdown = this.querySelector(".dropdown")
           console.log(dropdown);
 
@@ -39,6 +39,29 @@ document.addEventListener('DOMContentLoaded', function() {
         } )
       }
 
+// ZADANIE 2
+
+    var buttons = document.querySelectorAll('.read-more');
+    console.log(buttons);
+    console.log(buttons[0].previousElementSibling);
+
+    for (var i=0; i<buttons.length; i++) {
+        buttons[i].addEventListener("click", function() {
+          var textArea = this.previousElementSibling;
+          if (textArea.style.display === 'none' || textArea.style.display === '') {
+                textArea.style.display = 'block';
+                this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
+          } else {
+                textArea.style.display = "none";
+                this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-up"></span>';
+            }
+
+        });
+    }
 
 
-    });
+
+
+
+
+  });
