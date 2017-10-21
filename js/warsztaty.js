@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(buttons[0].previousElementSibling);
 
     for (var i=0; i<buttons.length; i++) {
-        buttons[i].addEventListener("click", function() {
+        buttons[i].addEventListener("click", function() { //0 dla jednego przyciski, zmieniamy na i dla for
           var textArea = this.previousElementSibling;
           if (textArea.style.display === 'none' || textArea.style.display === '') {
                 textArea.style.display = 'block';
@@ -60,8 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
+// ZADANIE 3
 
+var krawedz = document.querySelector(".collapse");
+console.log("krawedz");
 
+window.addEventListener("scroll", function () {
+  krawedz.style.borderBottom = '1px solid #7f7f7f';
+});
 
 
   });
