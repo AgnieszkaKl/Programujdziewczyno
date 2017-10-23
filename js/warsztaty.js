@@ -70,4 +70,15 @@ window.addEventListener("scroll", function () {
 });
 
 
+// ZADANIE 4
+
+var wroc = document.querySelector(".btn btn-dark");
+console.log("wroc");
+
+window.addEventListener("click", function (){
+  window.scroll( 0, 0);
+});
+
+
+
   });
