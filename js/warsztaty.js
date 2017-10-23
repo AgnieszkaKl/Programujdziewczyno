@@ -80,5 +80,8 @@ window.addEventListener("click", function (){
 });
 
 
+// ZADANIE 5
+
+
 
   });
